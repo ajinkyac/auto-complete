@@ -1,0 +1,12 @@
+<section class="autocomplete-container">
+	<form name="autocompleter" ng-submit="$ctrl.autoCompleteItemSelectAction()" novalidate autocomplete="off">
+		<input type="text" name="searchBox" class="form-control" ng-model="searchTerm" ng-required="boolean" ng-trim="boolean" ng-model-options="{ debounce: 1000 }" list="suggestionList" ng-keyup="$ctrl.setDebounceFlag()" />
+		<datalist id="suggestionList">
+			<option class="data-list-options" ng-repeat='item in suggestions' value="{{item.login}}">
+		</datalist>
+	</form>
+	<div class="autocomplete-error-container">
+		<span class="fa fa-exclamation-triangle" ng-if="errorMessage || errorMessage.length > 0"></span>
+		<span class="autocomplete-lookup-error" ng-if="errorMessage || errorMessage.length > 0">{{errorMessage}}</span>
+	</div>
+</section>
