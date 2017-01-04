@@ -1,0 +1,19 @@
+{
+  "name": "auto-complete",
+  "description": "Application to demo autocomplete component using AngularJS",
+  "main": "app/src/app.js",
+  "authors": [
+    "Ajinkya Chhatre"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ajinkyac/auto-complete",
+  "dependencies": {
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "auto-complete",
+  "version": "0.0.1",
+  "description": "Application to demo autocomplete component using AngularJS",
+  "main": "app/src/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1",
+	"test:e2e": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajinkyac/auto-complete.git"
+  },
+  "author": "Ajinkya Chhatre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajinkyac/auto-complete/issues"
+  },
+  "homepage": "https://github.com/ajinkyac/auto-complete#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+	"protractor": "^2.1.0"
+  }
+}
