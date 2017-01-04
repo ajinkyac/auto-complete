@@ -1,0 +1,13 @@
+<section class="app-master">
+	<header class="app-header" role="banner">
+		<section class="navbar">
+				<h3>Github explorer</h3>
+		</section>
+		<section class="container">
+			<span class="fa fa-github"></span>
+			<!-- The README.md has a small documentation for using auto-complete component -->
+			<auto-complete data-searchbox-placeholder-text="Enter github username" data-post-autocomplete-emitter="searchGitRepo" data-api-url="https://api.github.com/search/users?q=" data-api-item-lookup-url="https://api.github.com/users/#username/repos" data-api-replace-template="#username" data-display-key="items"></auto-complete>
+		</section>
+	</header>
+	<result></result>
+</section>
