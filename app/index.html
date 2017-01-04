@@ -6,9 +6,16 @@
 		<link rel="stylesheet" href="styles/css/app.css">
 		<link rel="stylesheet" href="3rdparty/css/font-awesome.css">
 		<link rel="stylesheet" href="3rdparty/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="3rdparty/css/datalist-polyfill.css">
+		<!--[if IE]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		<script src="3rdparty/js/jquery.min.js"></script>
 		<script src="3rdparty/js/angular.min.js"></script>
 		<script src="3rdparty/js/angular-ui-router.min.js"></script>
+		<script src="3rdparty/js/jquery.relevant-dropdown.js"></script>
+		<script src="3rdparty/js/load-fallbacks.js"></script>
+		<script src="3rdparty/js/modernizr.custom.95508.js"></script>
 		<title>Demo - autocomplete component</title>
 	</head>
 	<body>
@@ -20,5 +27,14 @@
 		<script src="src/components/autocomplete/component.js"></script>
 		<script src="src/components/result/component.js"></script>
 		<script src="src/provider/data.provider.js"></script>
+		<script>		
+			yepnope({
+				test : (!Modernizr.input.list),
+				yep : [
+					'3rdparty/js/jquery.relevant-dropdown.js',
+					'3rdparty/js/load-fallbacks.js'
+				]
+			});
+		</script>
 	</body>
 </html>
