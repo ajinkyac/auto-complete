@@ -1,0 +1,32 @@
+/*
+ * SASS partial for autocomplete component template i.e. app/src/components/autocomplete/template.html
+ *
+ * [As a coding practice keeping tag name classifiers in UPPERCASE]
+ */
+AUTO-COMPLETE {
+	display: inline-block;
+
+	& .autocomplete-container {
+		padding: 0 0 20px 0;
+		text-align: center;
+
+		& .form-control {
+			display: initial;
+			width: 25rem;
+		}
+
+		& DIV.autocomplete-error-container {
+			text-align: left;
+			padding: 0.5rem 0 0 0;
+			font-size: $font-size-normal + 0.3;
+
+			& SPAN.fa-exclamation-triangle {
+				color: $auto-complete-error-text-color;
+			}
+
+			& SPAN.fa-exclamation-triangle:before {
+				padding: 0 0.4rem 0 0;
+			}
+		}
+	}
+}

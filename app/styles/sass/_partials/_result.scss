@@ -1,0 +1,54 @@
+/*
+ * SASS partial for result component template i.e. app/src/components/result/template.html
+ *
+ * [As a coding practice keeping tag name classifiers in UPPERCASE]
+ */
+
+RESULT {
+	& .container {
+		border: none;
+	}
+
+	& .result-body {
+		box-sizing: border-box;
+		min-height: 50rem;
+		text-align: initial;
+
+		& .result-card {
+			width: 350px;
+			box-shadow: 1px 1px 3px #ddd;
+			min-height: 250px;
+			margin: 1rem;
+			padding: 0;
+
+			& .result-card-info {
+				P {
+					display: block;
+				}
+			}
+		}
+
+		& .fa:before {
+			margin: 0 1rem 0 0;
+		}
+
+		& .fa-code-fork:before {
+			margin: 0 1.4rem 0 0;
+		}
+
+		& .fa-external-link {
+			text-overflow: ellipsis;
+			width: 30rem;
+			white-space: nowrap;
+			overflow: hidden;
+			height: 2rem;
+			font-weight: bold;
+		}
+
+		& .result-card-footer {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
