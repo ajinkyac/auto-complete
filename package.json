@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "bower install",
     "start": "http-server ./app -a localhost -p 8000 -c-1",
-	"test:e2e": "protractor conf.js"
+	"test:e2e": "protractor protractor.conf.js"
   },
   "repository": {
     "type": "git",
