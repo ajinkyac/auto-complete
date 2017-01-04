@@ -1,0 +1,123 @@
+.html:before {
+  color: #e44b23; }
+
+.javascript:before {
+  color: #f1e05a; }
+
+.css:before {
+  color: #563d7c; }
+
+.java:before {
+  color: #b07219; }
+
+.ruby:before {
+  color: #701516; }
+
+.shell:before {
+  color: #89e051; }
+
+.typescript:before {
+  color: #2b7489; }
+
+.go:before {
+  color: #375eab; }
+
+.php:before {
+  color: #4f5d95; }
+
+.scala:before {
+  color: #dc322f; }
+
+.makefile:before {
+  color: #427819; }
+
+.coldfusion:before {
+  color: #ed2cd6; }
+
+.perl:before {
+  color: #0298c3; }
+
+.python:before {
+  color: #3572a5; }
+
+/*
+ * SASS partial for application's master template i.e. app/src/components/app/app.html
+ *
+ * [As a coding practice keeping tag name classifiers in UPPERCASE]
+ */
+SECTION.app-master .app-header {
+  position: relative;
+  margin: 0 0 -1px 0;
+  background-clip: padding-box;
+  background-color: #f5f5f5; }
+  SECTION.app-master .app-header SECTION.navbar {
+    background-color: #151515;
+    border-radius: 0;
+    color: #fff;
+    text-align: center; }
+  SECTION.app-master .app-header .container {
+    text-align: center;
+    margin-bottom: 1rem; }
+    SECTION.app-master .app-header .container SPAN.fa-github {
+      font-size: 3.5rem;
+      vertical-align: top;
+      margin: 0 1rem 0 0; }
+
+/*
+ * SASS partial for autocomplete component template i.e. app/src/components/autocomplete/template.html
+ *
+ * [As a coding practice keeping tag name classifiers in UPPERCASE]
+ */
+AUTO-COMPLETE {
+  display: inline-block; }
+  AUTO-COMPLETE .autocomplete-container {
+    padding: 0 0 20px 0;
+    text-align: center; }
+    AUTO-COMPLETE .autocomplete-container .form-control {
+      display: initial;
+      width: 25rem; }
+    AUTO-COMPLETE .autocomplete-container DIV.autocomplete-error-container {
+      text-align: left;
+      padding: 0.5rem 0 0 0;
+      font-size: 1.3rem; }
+      AUTO-COMPLETE .autocomplete-container DIV.autocomplete-error-container SPAN.fa-exclamation-triangle {
+        color: #ff0000; }
+      AUTO-COMPLETE .autocomplete-container DIV.autocomplete-error-container SPAN.fa-exclamation-triangle:before {
+        padding: 0 0.4rem 0 0; }
+
+/*
+ * SASS partial for result component template i.e. app/src/components/result/template.html
+ *
+ * [As a coding practice keeping tag name classifiers in UPPERCASE]
+ */
+RESULT .container {
+  border: none; }
+RESULT .result-body {
+  box-sizing: border-box;
+  min-height: 50rem;
+  text-align: initial; }
+  RESULT .result-body .result-card {
+    width: 350px;
+    box-shadow: 1px 1px 3px #ddd;
+    min-height: 250px;
+    margin: 1rem;
+    padding: 0; }
+    RESULT .result-body .result-card .result-card-info P {
+      display: block; }
+  RESULT .result-body .fa:before {
+    margin: 0 1rem 0 0; }
+  RESULT .result-body .fa-code-fork:before {
+    margin: 0 1.4rem 0 0; }
+  RESULT .result-body .fa-external-link {
+    text-overflow: ellipsis;
+    width: 30rem;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 2rem;
+    font-weight: bold; }
+  RESULT .result-body .result-card-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+/*# sourceMappingURL=app.css.map */
