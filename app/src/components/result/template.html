@@ -1,0 +1,28 @@
+<section class="panel panel-default container text-center">
+	<span ng-hide="results.length > 0 || errorMessage.length > 0">Searched repository list will appear here</span>
+	<div class="panel-body result-body row">
+		<span ng-if="errorMessage || errorMessage.length > 0">{{errorMessage}}</span>
+
+		<div ng-if="result.name.length" class="panel panel-default result-card col-md-4" ng-repeat='result in results'>
+			<div class="panel-heading">
+				<h3 class="panel-title"><a class="fa fa-external-link" href='{{result.html_url}}' target='_blank'>{{result.name}}</a></h3>
+			</div>
+			<div class="panel-body">
+				<p class="card-text">{{result.description}}</p>
+
+				<div class="result-card-info">
+					<p title="Repo language" ng-show="result.language" class="fa fa-circle {{result.language | lowercase}}">{{result.language}}</p>
+					<p title="Watchers" class="fa fa-eye">{{result.watchers_count}}</p>
+					<p title="Star gazers" class="fa fa-star">{{result.stargazers_count}}</p>
+					<p title="Repo forks" class="fa fa-code-fork">{{result.forks}}</p>
+				</div>
+
+				<div class="result-card-footer">
+					<!-- TODO: Download tarball/zipball master -->
+					<!-- <a href="{{result.branches_url}}" download><p class="fa fa-download"></p></a> -->
+					<a href="#"><p class="fa fa-download"></p></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
